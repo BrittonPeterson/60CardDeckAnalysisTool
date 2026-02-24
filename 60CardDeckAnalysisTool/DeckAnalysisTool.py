@@ -1,7 +1,6 @@
 import os
 from collections import defaultdict
 
-test = 44
 
 def parse_deck(deck_text):
     mainboard = defaultdict(int)
@@ -119,19 +118,22 @@ def analyze_folder():
 
         print(f"{card} appears {average:.2f} copies in {percent:.2f}% of decks")
         
-    make_core = input("\nGenerate core 60-card deck? (y/n): ").lower()
+    make_core = input("\nGenerate core deck? (y/n): ").lower()
 
     if make_core == "y":
-        generate_core_deck(
-            total_main_counts, decks_with_main,
-            total_side_counts, decks_with_side,
-            num_decks
-        )
+        threshold = float(input("Enter percentage threshold (e.g. 100, 80, 70): "))
+    
+    generate_core_deck(
+        total_main_counts, decks_with_main,
+        total_side_counts, decks_with_side,
+        num_decks,
+        threshold
+    )
 
 
 def generate_core_deck(total_main_counts, decks_with_main,
                        total_side_counts, decks_with_side,
-                       num_decks):
+                       num_decks, threshold_percent):
 
     core_main = {}
     core_side = {}
@@ -142,11 +144,14 @@ def generate_core_deck(total_main_counts, decks_with_main,
     main_total = 0
     side_total = 0
 
+    threshold_decimal = threshold_percent / 100
+
     # -------- MAINBOARD --------
     for card in total_main_counts:
         decks_playing = decks_with_main[card]
+        percent = decks_playing / num_decks
 
-        if decks_playing == num_decks:  # 100% only
+        if percent >= threshold_decimal:
             average = total_main_counts[card] / decks_playing
             rounded = round(average)
 
@@ -161,8 +166,9 @@ def generate_core_deck(total_main_counts, decks_with_main,
     # -------- SIDEBOARD --------
     for card in total_side_counts:
         decks_playing = decks_with_side[card]
+        percent = decks_playing / num_decks
 
-        if decks_playing == num_decks:  # 100% only
+        if percent >= threshold_decimal:
             average = total_side_counts[card] / decks_playing
             rounded = round(average)
 
@@ -176,7 +182,7 @@ def generate_core_deck(total_main_counts, decks_with_main,
 
     # -------- PRINT RESULTS --------
 
-    print("\n====== GENERATED CORE DECK ======\n")
+    print(f"\n====== GENERATED CORE DECK (≥ {threshold_percent}%) ======\n")
 
     print("---- MAINBOARD ----\n")
     for card in sorted(core_main):
