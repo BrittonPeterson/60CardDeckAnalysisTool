@@ -1,0 +1,36 @@
+4 Emry, Lurker of the Loch
+4 Kappa Cannoneer
+4 Pinnacle Emissary
+2 Arcbound Ravager
+1 Rust Harvester
+4 Mishra's Bauble
+4 Mox Opal
+3 Engineered Explosives
+3 Tormod's Crypt
+1 Aether Spellbomb
+1 Claws of Gix
+1 Lavaspur Boots
+1 Pithing Needle
+1 Shadowspear
+1 Welding Jar
+3 Metallic Rebuke
+3 Sink into Stupor
+4 Urza's Saga
+4 Weapons Manufacturing
+1 Tezzeret, Cruel Captain
+3 Scalding Tarn
+3 Spirebluff Canal
+2 Steam Vents
+1 Breeding Pool
+1 Island
+
+Sideboard
+2 Blood Moon
+2 Consign to Memory
+2 Damping Sphere
+2 Force of Negation
+2 Galvanic Blast
+2 Whipflare
+1 Haywire Mite
+1 Mystical Dispute
+1 Vexing Bauble

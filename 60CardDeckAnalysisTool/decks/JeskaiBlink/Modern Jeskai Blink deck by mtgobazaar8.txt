@@ -1,0 +1,39 @@
+2 Fable of the Mirror-Breaker
+4 Phlage, Titan of Fire's Fury
+4 Phelia, Exuberant Shepherd
+4 Quantum Riddler
+4 Ragavan, Nimble Pilferer
+4 Solitude
+3 Consign to Memory
+2 Ephemerate
+1 Strix Serenade
+3 Galvanic Discharge
+1 No More Lies
+2 Prismatic Ending
+1 Wrath of the Skies
+1 Teferi, Time Raveler
+3 Arena of Glory
+1 Thundering Falls
+1 Elegant Parlor
+1 Steam Vents
+3 Scalding Tarn
+1 Sacred Foundry
+2 Plains
+1 Mountain
+1 Meticulous Archive
+1 Island
+1 Hallowed Fountain
+4 Flooded Strand
+4 Arid Mesa
+
+Sideboard
+1 Surgical Extraction
+1 High Noon
+2 Damping Sphere
+2 Mystical Dispute
+1 No More Lies
+3 Obsidian Charmaw
+1 Strix Serenade
+1 Celestial Purge
+1 Wear/Tear
+2 Wrath of the Skies
